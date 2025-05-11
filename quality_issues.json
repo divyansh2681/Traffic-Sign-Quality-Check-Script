@@ -1,0 +1,469 @@
+[
+{
+  "task_id": "5f127f6f26831d0010e985e5",
+  "image_url": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_1.jpg",
+  "num_errors": 0,
+  "num_warnings": 1,
+  "issues": [
+    {
+      "severity": "warning",
+      "box_id": 7,
+      "check": "bg_color_mismatch",
+      "details": "information_sign usually one of ['blue', 'green', 'white'], got yellow"
+    }
+  ]
+},
+{
+  "task_id": "5f127f6c3a6b1000172320ad",
+  "image_url": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_2.jpg",
+  "num_errors": 0,
+  "num_warnings": 8,
+  "issues": [
+    {
+      "severity": "warning",
+      "box_id": 1,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 2,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 3,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got not_applicable"
+    },
+    {
+      "severity": "warning",
+      "box_id": 4,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got not_applicable"
+    },
+    {
+      "severity": "warning",
+      "box_id": 6,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got not_applicable"
+    },
+    {
+      "severity": "warning",
+      "box_id": 8,
+      "check": "bg_color_mismatch",
+      "details": "policy_sign usually one of ['blue', 'white', 'yellow'], got not_applicable"
+    },
+    {
+      "severity": "warning",
+      "box_id": 10,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 12,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    }
+  ]
+},
+{
+  "task_id": "5f127f671ab28b001762c204",
+  "image_url": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_4.jpg",
+  "num_errors": 0,
+  "num_warnings": 28,
+  "issues": [
+    {
+      "severity": "warning",
+      "box_id": 3,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 6,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 13,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 18,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 23,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 27,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 29,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 35,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 45,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 46,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 47,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 48,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 49,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 28,
+      "box_id_2": 40,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 28,
+      "box_id_2": 41,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 28,
+      "box_id_2": 42,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 28,
+      "box_id_2": 43,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 28,
+      "box_id_2": 44,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 40,
+      "box_id_2": 41,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 40,
+      "box_id_2": 42,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 40,
+      "box_id_2": 43,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 40,
+      "box_id_2": 44,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 41,
+      "box_id_2": 42,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 41,
+      "box_id_2": 43,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 41,
+      "box_id_2": 44,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 42,
+      "box_id_2": 43,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 42,
+      "box_id_2": 44,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    },
+    {
+      "severity": "warning",
+      "box_id_1": 43,
+      "box_id_2": 44,
+      "check": "duplicate_box",
+      "details": "IoU > 0.9"
+    }
+  ]
+},
+{
+  "task_id": "5f127f643a6b1000172320a5",
+  "image_url": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_5.jpg",
+  "num_errors": 0,
+  "num_warnings": 1,
+  "issues": [
+    {
+      "severity": "warning",
+      "box_id": 7,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    }
+  ]
+},
+{
+  "task_id": "5f127f5f3a6b100017232099",
+  "image_url": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_6.png",
+  "num_errors": 0,
+  "num_warnings": 9,
+  "issues": [
+    {
+      "severity": "warning",
+      "box_id": 5,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 6,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 11,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 12,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 13,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 17,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 18,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 21,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 27,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    }
+  ]
+},
+{
+  "task_id": "5f127f5ab1cb1300109e4ffc",
+  "image_url": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_7.jpg",
+  "num_errors": 0,
+  "num_warnings": 3,
+  "issues": [
+    {
+      "severity": "warning",
+      "box_id": 1,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got blue"
+    },
+    {
+      "severity": "warning",
+      "box_id": 15,
+      "check": "bg_color_mismatch",
+      "details": "information_sign usually one of ['blue', 'green', 'white'], got yellow"
+    },
+    {
+      "severity": "warning",
+      "box_id": 16,
+      "check": "bg_color_mismatch",
+      "details": "information_sign usually one of ['blue', 'green', 'white'], got yellow"
+    }
+  ]
+},
+{
+  "task_id": "5f127f55fdc4150010e37244",
+  "image_url": "https://observesign.s3-us-west-2.amazonaws.com/traffic_sign_8.jpg",
+  "num_errors": 0,
+  "num_warnings": 16,
+  "issues": [
+    {
+      "severity": "warning",
+      "box_id": 10,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 11,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 14,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 14,
+      "check": "tiny_box",
+      "details": "2x2 px"
+    },
+    {
+      "severity": "warning",
+      "box_id": 15,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 15,
+      "check": "tiny_box",
+      "details": "2x2 px"
+    },
+    {
+      "severity": "warning",
+      "box_id": 16,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 16,
+      "check": "tiny_box",
+      "details": "2x2 px"
+    },
+    {
+      "severity": "warning",
+      "box_id": 17,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 17,
+      "check": "tiny_box",
+      "details": "2x2 px"
+    },
+    {
+      "severity": "warning",
+      "box_id": 18,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 18,
+      "check": "tiny_box",
+      "details": "2x2 px"
+    },
+    {
+      "severity": "warning",
+      "box_id": 19,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 19,
+      "check": "tiny_box",
+      "details": "2x2 px"
+    },
+    {
+      "severity": "warning",
+      "box_id": 20,
+      "check": "bg_color_mismatch",
+      "details": "traffic_control_sign usually one of ['red', 'white', 'yellow'], got other"
+    },
+    {
+      "severity": "warning",
+      "box_id": 20,
+      "check": "tiny_box",
+      "details": "2x2 px"
+    }
+  ]
+}
+]
