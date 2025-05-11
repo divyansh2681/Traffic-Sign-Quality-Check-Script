@@ -1,0 +1,30 @@
+QC rules already implemented in checks.py:
+-- invalid_label – flags any bounding box whose label is not one of the five legal traffic‑sign classes (traffic_control_sign, construction_sign, information_sign, policy_sign, non_visible_face).
+-- missing_attribute – catches boxes that don’t supply all three required attributes (occlusion, truncation, background_color).
+-- invalid_occlusion / invalid_truncation / invalid_background_color – raise an error when an attribute’s value isn’t in the spec’s allowed enumerations (0/25/50/75/100 % for occlusion & truncation, or the approved color palette).
+-- bg_color_mismatch – MUTCD‑based color sanity:
+    -non_visible_face must be not_applicable;
+    -construction_sign must be orange;
+    -all other labels trigger a warning when their background color falls outside a sensible palette.
+-- tiny_box – warns on boxes smaller than 4x4 px; likely mis‑clicks or distant noise.
+-- oversized_box – errors on boxes covering more than 80 % of the image area; usually a drag‑all or multi‑sign mistake.
+-- duplicate_box – warns when two boxes with the same label overlap at IoU > 0.9, indicating an accidental duplicate annotation.
+
+Check results for each task:
+-- Task 1 (traffic_sign_1.jpg) – 1 warning: an information_sign was labeled with a yellow background, which is outside the normal blue/green/white palette.
+-- Task 2 (traffic_sign_2.jpg) – 8 warnings: every traffic_control_sign box had an implausible background color (other or not_applicable), and one policy_sign color didn’t match its palette.
+-- Task 3 (traffic_sign_3.jpg) – no QC findings; all boxes passed the current checks.
+-- Task 4 (traffic_sign_4.jpg) – 28 warnings: many of traffic_control_sign boxes used the color other, and a cluster of six nearly identical boxes triggered the duplicate_box check.
+-- Task 5 (traffic_sign_5.jpg) – 1 warning: a traffic_control_sign carried the background color other instead of the expected red/white/yellow.
+-- Task 6 (traffic_sign_6.png) – 9 warnings: repeated background‑color mismatches where traffic_control_sign boxes were marked as other.
+-- Task 7 (traffic_sign_7.jpg) – 3 warnings: one traffic_control_sign was incorrectly called blue, and two information_signs were marked yellow.
+-- Task 8 (traffic_sign_8.jpg) – 16 warnings: many 2x2 px traffic_control_sign boxes were both tiny and colored other, triggering tiny_box plus background‑color mismatch warnings.
+
+Where would I take this if I had more time (additional checks)?
+-- Color doesn’t match the sign type – catch things like a green Stop sign or a blue work‑zone diamond.
+-- Shape looks wrong for that sign – speed‑limit panels ought to be squarish, freeway guide signs are wide, parking blades are tall; flag the oddballs.
+-- Two boxes sitting on top of each other with different names – likely the same sign got labeled twice.
+-- Too many “other” colors in one task – suggests the labeler was guessing instead of picking the real color.
+-- Pile‑up of non‑visible‑face boxes in one tight spot – probably extra clicks on the back of a sign.
+-- Tall, skinny box with color = not_applicable – somebody boxed the pole, not the sign itself.
+-- Tiny orange diamond (< 10 px) – almost certainly a traffic cone, not a work‑zone sign.
