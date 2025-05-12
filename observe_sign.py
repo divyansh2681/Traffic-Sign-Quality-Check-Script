@@ -5,7 +5,6 @@ from checks import run_checks_on_task
 from scale_api import stream_completed_tasks
 
 
-# -------- helper to cope with both attachment layouts -----------------
 def _get_image_url(task: dict) -> str | None:
     """Return the first attachment URL or None if not found."""
     p = task.get("params", {})
@@ -23,7 +22,7 @@ def main() -> None:
     ap.add_argument(
         "--out", default="quality_issues.json", help="Path of the JSON report to write"
     )
-    ap.add_argument("--limit", type=int, help="Stop after N tasks (debug convenience)")
+    ap.add_argument("--limit", type=int, help="Stop after N tasks")
     args = ap.parse_args()
 
     written = 0
